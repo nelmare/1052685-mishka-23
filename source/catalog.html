@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
@@ -8,51 +8,59 @@
   <script src="js/picturefill.js"></script>
   <script src="js/svg4everybody.js"></script>
 </head>
-<body>
+<body class="page-body">
 <header class="page-header">
   <nav class="main-nav">
-    <a class="page-header__logo">
+    <a class="main-nav__logo main-nav__logo--mobile">
       <!--        <picture>-->
       <!--          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">-->
       <!--          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">-->
-      <!--          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Кэт Энерджи">-->
+      <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
       <!--        </picture>-->
     </a>
     <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
-      <span class="visually-hidden">Открыть меню</span>
+      <span class="visually-hidden">Открыть меню / Закрыть меню</span>
     </button>
-    <div class="main-nav__list main-nav__list--nojs site-list">
-      <ul>
-        <li>
-          <a class="site-list__link site-list__link--add">
+    <div class="main-nav__menu main-nav__menu--nojs menu">
+      <ul class="menu__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__logo">
             <!--            <picture>&ndash;&gt;-->
             <!--          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">-->
             <!--          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">-->
-            <!--          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Кэт Энерджи">-->
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Мишка">
             <!--        </picture>-->
           </a>
         </li>
-        <li>
-          <ul>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--add" href="catalog.html">Каталог товаров</a>
+        <li class="site-list__item">
+          <ul class="site-list__links">
+            <li class="site-list__links-item">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--add" href="form.html">Вязание на заказ</a>
+            <li class="site-list__links-item">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--add" href="#">Новые поступления</a>
+            <li class="site-list__links-item">
+              <a class="site-list__link" href="#">Новые поступления</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--add" href="#">Распродажа</a>
+            <li class="site-list__links-item">
+              <a class="site-list__link" href="#">Распродажа</a>
             </li>
           </ul>
         </li>
       </ul>
-      <ul>
-        <li><button>Поиск по сайту</button></li>
-        <li><a>Корзина: пока пуста</a></li>
-        <li><p>Бесплатная доставка по России</p></li>
+      <ul class="menu__list user-list">
+        <li class="user-list__item searching">
+          <button class="searching__button">Поиск по сайту</button>
+        </li>
+        <li class="user-list__item basket">
+          <a class="basket__link" href="#">Корзина:
+            <span class="basket__info">пока пуста</span>
+          </a>
+        </li>
+        <li class="user-list__item delivery">
+          <p class="delivery__text">Бесплатная доставка по России</p>
+        </li>
       </ul>
     </div>
   </nav>
