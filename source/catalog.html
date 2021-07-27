@@ -72,23 +72,69 @@
     <h2 class="visually-hidden">Продукция магазина</h2>
     <ul class="cards__list">
       <li class="cards__item">
-        <img class="cards__image" src="img/catalog-image.png" width="260" height="195" alt="Вязаный зайчик в голубом
+        <a href="#">
+          <img class="cards__image" src="img/product1.png" width="260" height="195" alt="Вязаный зайчик в голубом
         костюмчике">
+        </a>
         <div class="cards__wrapper">
-          <h3 class="cards__title"></h3>
+          <a href="#">
+            <h3 class="cards__title">Зайчик-попрыгайчик</h3>
+          </a>
           <p class="cards__info">Рост 30 см, вес 200 г</p>
           <div class="cards__footer">
             <p class="cards__cost">1 200 руб.</p>
             <button class="cards__button" type="button"><span class="visually-hidden">Положить в корзину</span></button>
           </div>
         </div>
-
+      </li>
+      <li class="cards__item">
+        <a href="#">
+          <img class="cards__image" src="img/product2.png" width="260" height="195" alt="Вязаная круглая корзинка белого
+        и персикового цветов">
+        </a>
+        <div class="cards__wrapper">
+          <a href="#">
+            <h3 class="cards__title">Корзинка для белья</h3>
+          </a>
+          <p class="cards__info">Диаметр 15 см, высота 10 см</p>
+          <div class="cards__footer">
+            <p class="cards__cost">690 руб.</p>
+            <button class="cards__button" type="button"><span class="visually-hidden">Положить в корзину</span></button>
+          </div>
+        </div>
+      </li>
+      <li class="cards__item">
+        <a href="#">
+          <img class="cards__image" src="img/product3.png" width="260" height="195" alt="Вязаная круглая корзинка белого и
+        светло-зеленого цветов">
+        </a>
+        <div class="cards__wrapper">
+          <a href="#">
+            <h3 class="cards__title">Большая корзинка для игрушек</h3>
+          </a>
+          <p class="cards__info">Рост 30 см, вес 200 г</p>
+          <div class="cards__footer">
+            <p class="cards__cost">1 500 руб.</p>
+            <button class="cards__button" type="button"><span class="visually-hidden">Положить в корзину</span></button>
+          </div>
+        </div>
       </li>
     </ul>
-
   </section>
-
-
+  <section class="video container">
+    <h2 class="video-title">Процесс производства</h2>
+    <div class="video__block">
+      <a class="video__link" href="#">
+        <picture>
+          <img class="video__media" src="video-image.jpg" alt="Видео о том, как появляются наши товары">
+        </picture>
+      </a>
+      <button class="video__button" aria-label="Запустить видео"></button>
+    </div>
+    <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются
+      наши товары.</p>
+    <a class="video__order-link button" href="#">Сделать заказ</a>
+  </section>
 </main>
 
 <footer class="page-footer">
@@ -135,6 +181,27 @@
     </div>
   </div>
 </footer>
+<div class="modal">
+  <h3 class="modal__title">Добавить в корзину</h3>
+  <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+    <p class="modal__instruction">Выберите размер:</p>
+    <p class="modal__wrapper">
+    <div class="modal__button modal__button--active">
+      <input type="radio" name="answer" id="s-size">
+      <label for="s-size">S</label>
+    </div>
+    <div class="modal__button">
+      <input type="radio" name="answer" id="m-size">
+      <label for="m-size">M</label>
+    </div>
+    <div class="modal__button">
+      <input type="radio" name="answer" id="l-size">
+      <label for="l-size">L</label>
+    </div>
+    </p>
+    <button class="modal__button" type="submit">Добавить</button>
+  </form>
+</div>
 <script src="js/burger.js"></script>
 <script>svg4everybody();</script>
 </body>
