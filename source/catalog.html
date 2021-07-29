@@ -77,7 +77,7 @@
         костюмчике">
         </a>
         <div class="cards__wrapper">
-          <a href="#">
+          <a class="cards__link" href="#">
             <h3 class="cards__title">Зайчик-попрыгайчик</h3>
           </a>
           <p class="cards__info">Рост 30 см, вес 200 г</p>
@@ -93,7 +93,7 @@
         и персикового цветов">
         </a>
         <div class="cards__wrapper">
-          <a href="#">
+          <a class="cards__link" href="#">
             <h3 class="cards__title">Корзинка для белья</h3>
           </a>
           <p class="cards__info">Диаметр 15 см, высота 10 см</p>
@@ -109,7 +109,7 @@
         светло-зеленого цветов">
         </a>
         <div class="cards__wrapper">
-          <a href="#">
+          <a class="cards__link" href="#">
             <h3 class="cards__title">Большая корзинка для игрушек</h3>
           </a>
           <p class="cards__info">Рост 30 см, вес 200 г</p>
@@ -133,7 +133,9 @@
     </div>
     <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются
       наши товары.</p>
-    <a class="video__order-link button" href="form.html">Сделать заказ</a>
+    <div class="video__order-link-wrapper">
+      <a class="video__order-link button" href="form.html">Сделать заказ</a>
+    </div>
   </section>
 </main>
 
@@ -182,24 +184,24 @@
   </div>
 </footer>
 <div class="modal">
-  <h3 class="modal__title">Добавить в корзину</h3>
+  <h3 class="modal__title block-title">Добавить в корзину</h3>
   <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
     <p class="modal__instruction">Выберите размер:</p>
-    <p class="modal__wrapper">
-    <div class="modal__button modal__button--active">
-      <input type="radio" name="answer" id="s-size">
-      <label for="s-size">S</label>
+    <div class="modal__wrapper">
+      <div class="modal__button modal__button--active">
+        <input type="radio" name="answer" id="s-size">
+        <label for="s-size">S</label>
+      </div>
+      <div class="modal__button">
+        <input type="radio" name="answer" id="m-size">
+        <label for="m-size">M</label>
+      </div>
+      <div class="modal__button">
+        <input type="radio" name="answer" id="l-size">
+        <label for="l-size">L</label>
+      </div>
     </div>
-    <div class="modal__button">
-      <input type="radio" name="answer" id="m-size">
-      <label for="m-size">M</label>
-    </div>
-    <div class="modal__button">
-      <input type="radio" name="answer" id="l-size">
-      <label for="l-size">L</label>
-    </div>
-    </p>
-    <button class="modal__button" type="submit">Добавить</button>
+    <button class="modal__basket-button" type="submit">Добавить</button>
   </form>
 </div>
 <script src="js/burger.js"></script>
