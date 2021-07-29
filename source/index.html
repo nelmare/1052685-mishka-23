@@ -51,10 +51,10 @@
       </ul>
       <ul class="menu__list user-list">
         <li class="user-list__item searching">
-          <button class="searching__button">Поиск по сайту</button>
+          <button class="user-list__link searching__button">Поиск по сайту</button>
         </li>
         <li class="user-list__item basket">
-          <a class="basket__link" href="#">Корзина:
+          <a class="user-list__link basket__link" href="#">Корзина:
             <span class="basket__info">пока пуста</span>
           </a>
         </li>
@@ -84,32 +84,37 @@
   <section class="promo">
     <div class="promo__container container">
       <h2 class="promo__main-title">Товар недели</h2>
-      <h3 class="promo__title">Вязаные корзинки</h3>
+      <h3 class="promo__title block-title">Вязаные корзинки</h3>
       <p class="promo__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-      <dl class="promo__description-list">
-        <dt class="promo__termin">Цвет:</dt>
-        <dd class="promo__description">«Тиффани»/серый</dd>
-        <dt class="promo__termin">Диаметр:</dt>
-        <dd class="promo__description">25 см</dd>
-        <dt class="promo__termin">Высота:</dt>
-        <dd class="promo__description">15 см</dd>
-      </dl>
+      <table class="promo__info">
+        <tbody>
+        <tr class="promo__color">
+          <td>Цвет:</td>
+          <td>«Тиффани»/серый</td>
+        </tr>
+        <tr class="promo__diameter">
+          <td>Диаметр:</td>
+          <td>25 см</td>
+        </tr>
+        <tr class="promo__height">
+          <td>Высота:</td>
+          <td>15 см</td>
+        </tr>
+        </tbody>
+      </table>
       <!--      <picture>-->
       <!--          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">-->
       <!--          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">-->
       <img class="promo__image" src="img/logo-mobile.svg" width="260" height="315" alt="Корзинка из магазина Мишка">
       <!--        </picture>-->
-      <dl class="promo__price">
-        <dt>Цена:</dt>
-        <dd>990 руб.</dd>
-      </dl>
+      <p class="promo__price">Цена: <span>990 руб.</span></p>
       <button class="promo__button button" type="button">Заказать</button>
     </div>
   </section>
 
   <section class="about">
     <div class="about__container container">
-      <h2 class="about__title">Коротко о нас</h2>
+      <h2 class="about__title block-title">Коротко о нас</h2>
       <ul class="about__list">
         <li class="about__item about__item--flower">Экологически чистые материалы</li>
         <li class="about__item about__item--money">Скандинавский стиль по российской цене</li>
@@ -122,7 +127,7 @@
   </section>
   <section class="reviews">
     <div class="reviews__container container">
-      <h3 class="reviews__title">Отзывы</h3>
+      <h3 class="reviews__title block-title">Отзывы</h3>
       <div class="reviews__content slider">
         <ul class="reviews__list slider__list">
           <li class="slider__item">
@@ -169,16 +174,19 @@
     </div>
   </section>
   <section class="contacts">
-    <h2 class="contacts__title">Контакты</h2>
-    <address class="contacts__wrapper">
-      <dl class="contacts__description-list">
-        <dt class="contacts__termin">e-mail:</dt>
-        <dd class="contacts__description">info@mimimishkashop.ru</dd>
-
-        <dt class="contacts__termin">адрес:</dt>
-        <dd class="contacts__description">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
-      </dl>
-    </address>
+    <div class="contacts__container container">
+      <h2 class="contacts__title">Контакты</h2>
+      <address class="contacts__wrapper">
+        <p class="contacts__block">
+          <span class="contacts__termin">e-mail:</span>
+          <span class="contacts__description">info@mimimishkashop.ru</span>
+        </p>
+        <p class="contacts__block">
+          <span class="contacts__termin">адрес:</span>
+          <span class="contacts__description">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</span>
+        </p>
+      </address>
+    </div>
     <div class="contacts__map-wrapper">
       <!--        <iframe class="contacts__active-map"-->
       <!--                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8226084186708!2d30.315214851720512!3d59.96826598179812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1624352805713!5m2!1sru!2sru"-->
@@ -190,7 +198,8 @@
       <!--          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">-->
       <!--          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">-->
       <!--          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">-->
-      <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Офис компании расположен по адресу: Санкт-Петербург, ул.Большая Конюшенная, д.19/8">
+      <img class="contacts__map" src="img/map-mobile@1x.png"
+           alt="Офис компании расположен по адресу: Санкт-Петербург, ул.Большая Конюшенная, д.19/8">
       <!--        </picture>-->
     </div>
     <a class="contacts__button button" href="#">Напишите нам</a>
@@ -242,23 +251,23 @@
   </div>
 </footer>
 <div class="modal">
-  <h3 class="modal__title">Добавить в корзину</h3>
+  <h3 class="modal__title block-title">Добавить в&nbsp;корзину</h3>
   <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
     <p class="modal__instruction">Выберите размер:</p>
-    <p class="modal__wrapper">
-    <div class="modal__button modal__button--active">
-      <input type="radio" name="answer" id="s-size">
-      <label for="s-size">S</label>
+    <div class="modal__wrapper">
+      <div class="modal__button modal__button--active">
+        <input type="radio" name="answer" id="s-size">
+        <label for="s-size">S</label>
+      </div>
+      <div class="modal__button">
+        <input type="radio" name="answer" id="m-size">
+        <label for="m-size">M</label>
+      </div>
+      <div class="modal__button">
+        <input type="radio" name="answer" id="l-size">
+        <label for="l-size">L</label>
+      </div>
     </div>
-    <div class="modal__button">
-      <input type="radio" name="answer" id="m-size">
-      <label for="m-size">M</label>
-    </div>
-    <div class="modal__button">
-      <input type="radio" name="answer" id="l-size">
-      <label for="l-size">L</label>
-    </div>
-    </p>
     <button class="modal__button" type="submit">Добавить</button>
   </form>
 </div>
