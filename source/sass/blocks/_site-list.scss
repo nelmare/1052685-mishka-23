@@ -1,0 +1,22 @@
+.site-list {
+  @include list-reset;
+}
+
+.site-list__links {
+  @include list-reset;
+}
+
+.site-list__link {
+  color: $title-color;
+  text-decoration: none;
+  display: block;
+  padding: 28px 0 26px 76px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

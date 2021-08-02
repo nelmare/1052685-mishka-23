@@ -1,0 +1,31 @@
+.contacts {
+  padding-bottom: 39px;
+}
+
+.contacts__title {
+  margin-bottom: 28px;
+}
+
+.contacts__wrapper {
+  margin-bottom: 12px;
+  font-style: normal;
+}
+
+.contacts__block {
+  @include margin-reset;
+  margin-bottom: 50px;
+}
+
+.contacts__map-wrapper {
+  margin-bottom: 42px;
+}
+
+.contacts__button {
+  color: $text-color;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contacts__description:hover {
+  color: $green-color4;
+}

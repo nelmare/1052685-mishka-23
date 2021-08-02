@@ -1,0 +1,43 @@
+.intro__container {
+  background-image: url("../img/intro-back.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  width: 100%;
+  min-height: 283px;
+  background-color: $grey-color;
+}
+
+.intro__title {
+  @include margin-reset;
+  font-weight: bold;
+  font-size: 27px;
+  text-align: center;
+  padding-top: 73px;
+  margin-bottom: 120px;
+}
+
+.intro__list {
+  @include list-reset;
+}
+
+.intro__link {
+  color: $main-color;
+  text-decoration: none;
+}
+
+.intro__link--light {
+  background-color: $green-color1;
+
+  &:hover {
+    background-color: $green-color3;
+  }
+}
+
+.intro__link--dark {
+  background-color: $green-color2;
+
+  &:hover {
+    background-color: $green-color4;
+  }
+}
