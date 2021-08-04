@@ -73,7 +73,7 @@
       свяжемся с вами, чтобы уточнить детали.</p>
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="form__block form__block--type">
-        <legend class="form__block-legend">Тип</legend>
+        <h2 class="form__block-legend">Тип</h2>
         <ul class="form__list form__list--radio">
           <li class="form__item form__item--radio">
             <input class="form__radio visually-hidden" type="radio" name="radio" id="house" checked>
@@ -86,7 +86,7 @@
         </ul>
       </fieldset>
       <fieldset class="form__block form__block--color">
-        <legend class="form__block-legend">Цвет</legend>
+        <h2 class="form__block-legend">Цвет</h2>
         <ul class="form__list form__list--plus">
           <li class="form__item form__item--checkbox">
             <label class="form__checkbox-name form__label" for="color1">
@@ -133,25 +133,27 @@
         </ul>
       </fieldset>
       <fieldset class="form__block form__block--data">
-        <legend class="form__block-legend">ФИО</legend>
-        <div class="form__group">
-          <label class="form__line-name form__label" for="name-line">Имя:</label>
-          <input class="form__line form__placeholder form__line--name" type="text" name="name" id="name-line"
-                  placeholder="Введите ваше имя*">
-        </div>
-        <div class="form__group">
-          <label class="form__line-name form__label" for="familyname-line">Фамилия:</label>
-          <input class="form__line form__placeholder form__line--familyname" type="text" name="family-name"
-                  id="familyname-line" placeholder="Укажите фамилию*">
-        </div>
-        <div class="form__group">
-          <label class="form__line-name form__label" for="patronymic">Отчество:</label>
-          <input class="form__line form__placeholder form__line--patronymic" type="text" name="patronymic"
-                  id="patronymic" placeholder="Отчество, если желаете">
+        <h2 class="form__block-legend">ФИО</h2>
+        <div class="form__group-wrapper">
+          <div class="form__group">
+            <label class="form__line-name form__label" for="name-line">Имя:</label>
+            <input class="form__line form__placeholder form__line--name" type="text" name="name" id="name-line"
+                    placeholder="Введите ваше имя*">
+          </div>
+          <div class="form__group">
+            <label class="form__line-name form__label" for="familyname-line">Фамилия:</label>
+            <input class="form__line form__placeholder form__line--familyname" type="text" name="family-name"
+                    id="familyname-line" placeholder="Укажите фамилию*">
+          </div>
+          <div class="form__group">
+            <label class="form__line-name form__label" for="patronymic">Отчество:</label>
+            <input class="form__line form__placeholder form__line--patronymic" type="text" name="patronymic"
+                    id="patronymic" placeholder="Отчество, если желаете">
+          </div>
         </div>
       </fieldset>
       <fieldset class="form__block form__block--tel">
-        <legend class="form__block-legend form__block-legend--minmargin">Тел</legend>
+        <h2 class="form__block-legend form__block-legend--minmargin">Тел</h2>
         <div class="form__group">
           <label class="visually-hidden" for="phone-line">Введите номер Вашего телефона</label>
           <div class="form__column">
@@ -164,7 +166,7 @@
         </div>
       </fieldset>
       <fieldset class="form__block form__block--email">
-        <legend class="form__block-legend form__block-legend--minmargin">E-mail</legend>
+        <h2 class="form__block-legend form__block-legend--minmargin">E-mail</h2>
         <div class="form__group">
           <label class="visually-hidden" for="email-line">Введите адрес e-mail</label>
           <div class="form__column">
@@ -177,12 +179,12 @@
         </div>
       </fieldset>
       <fieldset class="form__block form__block--additional">
-        <legend class="form__block-legend form__block-legend--minmargin">
+        <h2 class="form__block-legend form__block-legend--minmargin">
           <span class="form__back">Доп</span>
-        </legend>
+        </h2>
         <label class="visually-hidden" for="comment">Пожелания к заказу</label>
-        <textarea class="form__textarea form__placeholder" name="comment" id="comment" placeholder="Опишите все ваши
-        пожелания к заказу"></textarea>
+        <textarea class="form__textarea form__placeholder" name="comment" id="comment"
+                    placeholder="Опишите все ваши пожелания к заказу" rows="5"></textarea>
       </fieldset>
       <div class="form__button-wrapper">
         <button class="form__button button" type="button">Отправить заказ</button>
