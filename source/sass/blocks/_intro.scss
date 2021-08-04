@@ -1,11 +1,11 @@
-.intro__container {
+.intro {
   background-image: url("../img/intro-back.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
   width: 100%;
   min-height: 283px;
-  background-color: $grey-color;
+  background-color: $grey-color8;
 }
 
 .intro__title {
@@ -13,17 +13,27 @@
   font-weight: bold;
   font-size: 27px;
   text-align: center;
-  padding-top: 73px;
-  margin-bottom: 120px;
+  margin: 0 auto 120px auto;
+  width: 100%;
+  max-width: 375px;
+  padding: 73px 30px 0 30px;
 }
 
 .intro__list {
   @include list-reset;
 }
 
+.intro__item {
+  width: 100%;
+}
+
 .intro__link {
   color: $main-color;
   text-decoration: none;
+  display: block;
+  font-size: 19px;
+  line-height: 24px;
+  padding: 24px 0 31px 30px;
 }
 
 .intro__link--light {
@@ -39,5 +49,39 @@
 
   &:hover {
     background-color: $green-color4;
+  }
+}
+
+.intro__link span {
+  width: 125px;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__container {
+    padding: 0 50px;
+  }
+
+  .intro__title {
+    font-size: 43px;
+    line-height: 50px;
+    max-width: 660px;
+  }
+
+  .intro__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .intro__link {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 25px 34px 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__link {
+    padding-left: 37px;
   }
 }

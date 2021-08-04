@@ -26,3 +26,21 @@
 .slider__controls {
   margin-bottom: 38px;
 }
+
+@media (min-width: $tablet-width) {
+  .slider {
+    position: relative;
+  }
+
+  .slider__name {
+    font-size: 18px;
+  }
+
+  .slider__controls {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    width: 175px;
+  }
+}

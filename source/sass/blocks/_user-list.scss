@@ -16,3 +16,17 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-self: flex-start;
+  }
+
+  .user-list__link {
+    padding: 32px 0 32px 0;
+  }
+
+}

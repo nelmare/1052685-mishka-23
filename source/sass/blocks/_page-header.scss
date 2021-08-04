@@ -6,3 +6,15 @@
   line-height: 24px;
   color: $title-color;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    background: linear-gradient(to bottom, $main-color 89px, $grey-color7 89px, $grey-color7 90px, $grey-color8 90px, $grey-color8);
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .page-header--inner {
+    background: linear-gradient(to bottom, $main-color 89px, $grey-color7 89px, $grey-color7 90px, $grey-color2 90px, $grey-color2);
+  }
+}

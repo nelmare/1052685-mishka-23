@@ -14,3 +14,64 @@
   line-height: 20px;
   color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .about {
+    padding-top: 72px;
+    padding-bottom: 83px;
+  }
+
+  .about__list {
+    //column-count: 2;
+    //column-width: auto;
+    font-size: 20px;
+    line-height: 22px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 110px;
+  }
+
+  .about__item--flower,
+  .about__item--money,
+  .about__item--heart {
+    grid-column: 1/7;
+    max-width: 240px;
+  }
+
+  .about__item--threads,
+  .about__item--rocket,
+  .about__item--gift {
+    grid-column: 7/13;
+    max-width: 320px;
+  }
+
+  .about__item--flower,
+  .about__item--threads {
+    grid-row: 1/2;
+  }
+
+  .about__item--money,
+  .about__item--rocket {
+    grid-row: 2/3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding-top: 91px;
+    padding-bottom: 90px;
+  }
+
+  .about__container {
+    padding-left: 226px;
+  }
+
+  //.about__title {
+  //  padding-left: 176px;
+  //}
+
+  .about__list {
+    width: 83%;
+    //padding-left: 176px;
+  }
+}
