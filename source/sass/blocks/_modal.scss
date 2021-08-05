@@ -1,0 +1,41 @@
+.modal {
+  padding: 28px 30px 46px 30px;
+}
+
+.modal__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.modal__instruction {
+  @include margin-reset;
+  text-align: center;
+}
+
+.modal__wrapper {
+  margin-bottom: 21px;
+}
+
+.modal__button {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+}
+
+.modal__basket-button {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  background-color: $green-color1;
+  color: $main-color;
+  border: none;
+
+  &:hover {
+    background-color: $green-color3;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,28 @@
+.slider__list {
+  @include list-reset;
+}
+
+.slider__text,
+.slider__author {
+  @include margin-reset;
+  margin-bottom: 30px;
+}
+
+.slider__text {
+  margin-bottom: 33px;
+}
+
+.slider__name {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $title-color;
+}
+
+.slider__nick {
+  font-size: 17px;
+}
+
+.slider__controls {
+  margin-bottom: 38px;
+}

@@ -1,0 +1,38 @@
+.promo {
+  padding-top: 31px;
+  padding-bottom: 36px;
+}
+
+.promo__main-title {
+  @include margin-reset;
+  color: $green-color1;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+}
+
+.promo__text {
+  @include margin-reset;
+  line-height: 24px;
+  margin-bottom: 28px;
+}
+
+.promo__info {
+  line-height: 20px;
+  margin-bottom: 41px;
+}
+
+.promo__image {
+  margin-bottom: 25px;
+}
+
+.promo__price {
+  @include margin-reset;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+}

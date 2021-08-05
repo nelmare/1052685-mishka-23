@@ -1,0 +1,16 @@
+.about {
+  padding-top: 37px;
+  padding-bottom: 26px;
+}
+
+.about__title {
+  margin-bottom: 28px;
+}
+
+.about__list {
+  @include list-reset;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+}

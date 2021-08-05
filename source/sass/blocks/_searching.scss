@@ -1,0 +1,11 @@
+.searching__button {
+  border: none;
+  background-color: $main-color;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $title-color;
+
+  @include margin-reset;
+  padding: 28px 0 26px 76px;
+}

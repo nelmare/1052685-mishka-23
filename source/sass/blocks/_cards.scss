@@ -1,0 +1,59 @@
+.cards {
+  padding-top: 30px;
+}
+
+.cards__list {
+  @include list-reset;
+}
+
+.cards__item {
+  margin-bottom: 30px;
+}
+
+.cards__image {
+  display: block;
+}
+
+.cards__wrapper {
+  padding: 27px 28px 0 28px;
+}
+
+.cards__link {
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 6px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.cards__title {
+  @include margin-reset;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $title-color;
+  text-align: left;
+}
+
+.cards__info {
+  @include margin-reset;
+  font-size: 13px;
+  margin-bottom: 17px;
+}
+
+.cards__footer {
+  padding: 22px 0 26px 0;
+}
+
+.cards__cost {
+  @include margin-reset;
+  font-weight: bold;
+  line-height: 24px;
+  color: $title-color;
+}

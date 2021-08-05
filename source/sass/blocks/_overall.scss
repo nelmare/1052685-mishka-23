@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  @include margin-reset;
+  min-width: 320px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: left;
+  color: $text-color;
+  background-color: $main-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  min-width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  border: 2px solid $text-color;
+  background-color: $main-color;
+  display: block;
+  width: 100%;
+  padding: 16px;
+  text-transform: uppercase;
+  color: $text-color;
+
+  &:hover {
+    color: $main-color;
+    background-color: $text-color;
+  }
+
+  &:active {
+    color: $grey-color6;
+  }
+}
+
+.block-title {
+  @include margin-reset;
+  font-weight: bold;
+  font-size: 25px;
+  color: $title-color;
+}
