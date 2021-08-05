@@ -83,7 +83,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .video__container {
     display: grid;
     grid-template-columns: 683px auto;

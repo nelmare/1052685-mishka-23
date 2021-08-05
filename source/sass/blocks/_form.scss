@@ -5,6 +5,7 @@
 .form__block {
   border: none;
   @include margin-reset;
+  margin-bottom: 31px;
 }
 
 .form__block-legend {
@@ -13,6 +14,7 @@
   font-size: 17px;
   line-height: 16px;
   color: $green-color1;
+  margin-bottom: 25px;
 }
 
 .form__list {
@@ -100,6 +102,7 @@
 .form__group {
   display: flex;
   width: 100%;
+  flex-direction: column;
 }
 
 .form__column {
@@ -160,5 +163,19 @@
 
   .form__button {
     width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    grid-column: 1/-1;
+  }
+
+  .form__block {
+    grid-template-columns: 1fr 5fr;
+  }
+
+  .form__list {
+    grid-column: 2/7;
   }
 }

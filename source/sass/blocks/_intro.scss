@@ -71,6 +71,9 @@
   .intro__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .intro__link {

@@ -10,5 +10,20 @@
   .form-main__legend {
     padding-top: 54px;
     margin-bottom: 63px;
+    max-width: 675px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-main {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+  }
+
+  .form-main__legend {
+    padding-top: 98px;
+    grid-column: 2/3;
   }
 }

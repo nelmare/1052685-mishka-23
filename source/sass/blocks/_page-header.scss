@@ -1,6 +1,4 @@
 .page-header {
-  padding-top: 22px;
-  padding-bottom: 22px;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -8,13 +6,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
-    background: linear-gradient(to bottom, $main-color 89px, $grey-color7 89px, $grey-color7 90px, $grey-color8 90px, $grey-color8);
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .page-header--inner {
-    background: linear-gradient(to bottom, $main-color 89px, $grey-color7 89px, $grey-color7 90px, $grey-color2 90px, $grey-color2);
-  }
+  //.page-header {
+  //  box-shadow: none;
+  //  padding: 0 50px;
+  //}
 }
