@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 40px;
   grid-template-rows: 1fr auto;
-  box-shadow: 0px 1px 0px $grey-color4, inset 0px 1px 0px $grey-color4;
+  box-shadow: 0 1px 0 $grey-color4, inset 0 1px 0 $grey-color4;
   padding-top: 22px;
   padding-bottom: 22px;
 }
