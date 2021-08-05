@@ -8,7 +8,7 @@ html {
   box-sizing: inherit;
 }
 
-body {
+.page-body {
   @include margin-reset;
   min-width: 320px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -74,4 +74,39 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   font-size: 25px;
   color: $title-color;
+}
+
+@media (min-width: $tablet-width) {
+  .page-body {
+    font-size: 17px;
+    background: linear-gradient(to bottom, $main-color 89px, $grey-color7 89px, $grey-color7 90px, $grey-color8 90px, $grey-color8 362px, $main-color 362px, $main-color);
+  }
+
+  .page-body--inner {
+    background: linear-gradient(to bottom, $main-color 89px, $grey-color7 89px, $grey-color7 90px, $grey-color2 90px, $grey-color2 362px, $main-color 362px, $main-color);
+  }
+
+  .container {
+    padding: 0 50px;
+  }
+
+  .block-title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .button {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 1150px;
+  }
+
+  .block-title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

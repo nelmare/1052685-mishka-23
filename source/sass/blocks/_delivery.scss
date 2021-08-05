@@ -1,3 +1,21 @@
+.delivery {
+  display: none;
+}
+
 .delivery__text {
   @include margin-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .delivery {
+    display: block;
+    margin-left: auto;
+    padding-top: 20px;
+  }
+
+  .delivery__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+  }
 }

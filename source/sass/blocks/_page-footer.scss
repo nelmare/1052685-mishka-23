@@ -3,3 +3,24 @@
   padding-bottom: 23px;
   background-color: $grey-color2;
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 53px;
+    padding-bottom: 60px;
+  }
+
+  .page-footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+}

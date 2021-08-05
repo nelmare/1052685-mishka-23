@@ -1,8 +1,13 @@
 .page-header {
-  padding-top: 22px;
-  padding-bottom: 22px;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: $title-color;
+}
+
+@media (min-width: $tablet-width) {
+  //.page-header {
+  //  box-shadow: none;
+  //  padding: 0 50px;
+  //}
 }
