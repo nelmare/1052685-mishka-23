@@ -3,7 +3,14 @@
 }
 
 .site-list__item--logo {
-  display: none;
+//  display: none;
+}
+
+.site-list__logo {
+  text-align: center;
+  height: 79px;
+  display: block;
+  padding: 22px 0;
 }
 
 .site-list__links {
@@ -33,8 +40,13 @@
   }
 
   .site-list__item--logo {
-    display: block;
-    padding: 32px 0;
+    //padding: 32px 0;
+  }
+
+  .site-list__logo {
+    padding: 22px 0 20px 0;
+    height: 88px;
+    text-align: left;
   }
 
   .site-list__link {
