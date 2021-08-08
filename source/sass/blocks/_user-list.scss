@@ -6,7 +6,7 @@
   color: $title-color;
   text-decoration: none;
   display: block;
-  padding: 28px 0 26px 76px;
+  padding: 28px 0 26px 46px;
 
   &:hover {
     opacity: 0.6;
@@ -14,5 +14,19 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-self: flex-start;
+    justify-content: flex-end;
+  }
+
+  .user-list__link {
+    padding: 32px 0 32px 0;
   }
 }
