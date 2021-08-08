@@ -11,14 +11,29 @@
 //  padding-bottom: 22px;
 //}
 
-.main-nav__toggle {
-  position: absolute;
-  right: 30px;
-  top: 12px;
-  width: 40px;
-  height: 40px;
-}
+@media (max-width: $mobile-width-only) {
+  .main-nav__toggle {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: $main-color;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
+  .main-nav--closed .main-nav__toggle {
+    background-size: 20px 14px;
+    background-image: url("../img/menu-burger.svg");
+  }
+
+  .main-nav--open .main-nav__toggle {
+    background-size: 21px 20px;
+    background-image: url("../img/menu-close.svg");
+  }
+}
 //.main-nav__logo--mobile {
 //  height: 35px;
 //  text-align: center;
