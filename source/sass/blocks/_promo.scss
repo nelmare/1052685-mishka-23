@@ -24,8 +24,20 @@
   margin-bottom: 41px;
 }
 
+//.promo__image-wrapper {
+//  width: 100%;
+//}
+
 .promo__image {
   margin-bottom: 25px;
+  height: 315px;
+  width: 260px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  //height: auto;
+  //object-fit: contain;
+  //width: 100%;
 }
 
 .promo__price {

@@ -22,6 +22,12 @@
   margin-bottom: 42px;
 }
 
+.contacts__map {
+  width: 100%;
+  object-fit: contain;
+  height: 454px;
+}
+
 .contacts__button {
   color: $text-color;
   text-align: center;
@@ -50,6 +56,10 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     column-gap: 25px;
+  }
+
+  .contacts__map {
+    height: 457px;
   }
 
   .contacts__button {
@@ -92,5 +102,6 @@
     grid-row: 2/3;
     margin-right: 58px;
     margin-left: 0;
+    align-self: start;
   }
 }

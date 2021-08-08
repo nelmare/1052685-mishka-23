@@ -15,6 +15,11 @@
   color: #000000;
 }
 
+.about__item {
+  margin-bottom: 32px;
+  padding-top: 51px;
+}
+
 @media (min-width: $tablet-width) {
   .about {
     padding-top: 72px;

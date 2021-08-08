@@ -10,7 +10,7 @@
   text-align: center;
   height: 79px;
   display: block;
-  padding: 22px 0;
+  padding: 19px 0;
 }
 
 .site-list__links {
@@ -44,7 +44,7 @@
   }
 
   .site-list__item--logo {
-    //padding: 32px 0;
+    box-shadow: none;
   }
 
   .site-list__logo {
@@ -53,8 +53,12 @@
     text-align: left;
   }
 
+  .site-list__links-item {
+    border-bottom: none;
+  }
+
   .site-list__link {
-    padding: 20px 33px 20px 0;
+    padding: 20px 29px 20px 0;
     font-size: 15px;
   }
 
