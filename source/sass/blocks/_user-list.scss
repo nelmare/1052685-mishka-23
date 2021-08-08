@@ -2,17 +2,31 @@
   @include list-reset;
 }
 
+.user-list__item {
+  border-bottom: 1px solid $grey-color4;
+}
+
 .user-list__link {
   color: $title-color;
   text-decoration: none;
   display: block;
-  padding: 28px 0 26px 46px;
+  padding: 28px 30px 26px 30px;
 
-  &:hover {
+  &:hover span {
     opacity: 0.6;
   }
 
-  &:active {
+  &:active span {
+    opacity: 0.3;
+  }
+
+  &:hover svg path {
+    fill: $green-color5;
+    opacity: 1;
+  }
+
+  &:active svg path {
+    fill: $green-color5;
     opacity: 0.3;
   }
 }
