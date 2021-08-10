@@ -21,6 +21,11 @@
   border-bottom: 1px solid $grey-color4;
 }
 
+.site-list__links-item:nth-child(3),
+.site-list__links-item:nth-child(4) {
+  display: none;
+}
+
 .site-list__link {
   color: $title-color;
   text-decoration: none;
@@ -60,11 +65,6 @@
   .site-list__link {
     padding: 20px 29px 20px 0;
     font-size: 15px;
-  }
-
-  .site-list__links-item:nth-child(3),
-  .site-list__links-item:nth-child(4) {
-    display: none;
   }
 }
 
