@@ -1,5 +1,19 @@
+.basket svg {
+  margin-right: 26px;
+}
+
 @media (min-width: $tablet-width) {
   .basket {
     //padding-right: 80px;
+  }
+
+  .basket svg {
+    margin: 0 29px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .basket svg {
+    margin: 0 31px;
   }
 }

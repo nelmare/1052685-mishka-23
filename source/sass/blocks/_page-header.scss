@@ -6,8 +6,18 @@
 }
 
 @media (min-width: $tablet-width) {
-  //.page-header {
-  //  box-shadow: none;
-  //  padding: 0 50px;
-  //}
+  .page-header {
+    padding: 0 50px;
+    background: linear-gradient(to bottom, $main-color 88px, $grey-color7 88px, $grey-color7 89px, $grey-color8 89px, $grey-color8);
+  }
+
+  .page-header--inner {
+    background: linear-gradient(to bottom, $main-color 88px, $grey-color7 88px, $grey-color7 89px, $grey-color2 89px, $grey-color2);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    max-width: 1150px;
+  }
 }

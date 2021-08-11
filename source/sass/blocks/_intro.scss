@@ -1,11 +1,17 @@
 .intro {
   background-image: url("../img/intro-back.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 320px 373px;
   background-position: center top;
   width: 100%;
-  min-height: 283px;
+
   background-color: $grey-color8;
+}
+
+.intro__container {
+  display: grid;
+  grid-template-rows: 1fr 206px;
+  min-height: 507px;
 }
 
 .intro__title {
@@ -13,7 +19,7 @@
   font-weight: bold;
   font-size: 27px;
   text-align: center;
-  margin: 0 auto 120px auto;
+  margin: 0 auto 138px auto;
   width: 100%;
   max-width: 375px;
   padding: 73px 30px 0 30px;
@@ -60,6 +66,8 @@
 @media (min-width: $tablet-width) {
   .intro__container {
     padding: 0 50px;
+    grid-template-rows: 1fr auto;
+    min-height: 480px;
   }
 
   .intro__title {
@@ -71,9 +79,7 @@
   .intro__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 1150px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
   }
 
   .intro__link {
@@ -84,6 +90,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .intro__list {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .intro__link {
     padding-left: 37px;
   }

@@ -79,11 +79,6 @@ input[type="radio"].visually-hidden {
 @media (min-width: $tablet-width) {
   .page-body {
     font-size: 17px;
-    background: linear-gradient(to bottom, $main-color 89px, $grey-color7 89px, $grey-color7 90px, $grey-color8 90px, $grey-color8 362px, $main-color 362px, $main-color);
-  }
-
-  .page-body--inner {
-    background: linear-gradient(to bottom, $main-color 89px, $grey-color7 89px, $grey-color7 90px, $grey-color2 90px, $grey-color2 362px, $main-color 362px, $main-color);
   }
 
   .container {
