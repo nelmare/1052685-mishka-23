@@ -6,4 +6,14 @@
   .basket {
     //padding-right: 80px;
   }
+
+  .basket svg {
+    margin: 0 29px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .basket svg {
+    margin: 0 31px;
+  }
 }

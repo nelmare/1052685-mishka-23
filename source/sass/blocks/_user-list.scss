@@ -40,6 +40,10 @@
     justify-content: flex-end;
   }
 
+  .user-list__item {
+    border-bottom: none;
+  }
+
   .user-list__link {
     padding: 32px 0 32px 0;
   }
