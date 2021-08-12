@@ -40,10 +40,14 @@
   font-size: 19px;
   line-height: 24px;
   padding: 24px 0 31px 30px;
+  background-repeat: no-repeat;
 }
 
 .intro__link--light {
   background-color: $green-color1;
+  background-image: url("../img/interior-icon.svg");
+  background-size: 40px 62px;
+  background-position: 90% 23px;
 
   &:hover {
     background-color: $green-color3;
@@ -52,6 +56,9 @@
 
 .intro__link--dark {
   background-color: $green-color2;
+  background-image: url("../img/toy-icon.svg");
+  background-size: 40px 62px;
+  background-position: 90% 21px;
 
   &:hover {
     background-color: $green-color4;

@@ -1,7 +1,17 @@
+.copyright {
+  padding-top: 22px;
+
+}
+
 .copyright__text {
   @include margin-reset;
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
   color: $title-color;
+  width: 180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

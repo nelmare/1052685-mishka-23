@@ -25,6 +25,31 @@
 
 .slider__controls {
   margin-bottom: 38px;
+  font-size: 0;
+}
+
+.slider__button {
+  background-color: transparent;
+  border: 1px solid $grey-color4;
+  padding: 26px 48px 26px 32px;
+  background-image: url("../img/huge-arrow-left.svg");
+  background-repeat: no-repeat;
+  background-size: 50px 26px;
+  background-position: 48% 50%;
+  width: 50%;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+   opacity: 0.3;
+  }
+}
+
+.slider__button:last-child {
+  border-right: none;
+  transform: rotate(180deg);
 }
 
 @media (min-width: $tablet-width) {
