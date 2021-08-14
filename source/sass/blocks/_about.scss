@@ -62,6 +62,10 @@
     padding-bottom: 83px;
   }
 
+  .about__title {
+    margin-bottom: 42px;
+  }
+
   .about__list {
     //column-count: 2;
     //column-width: auto;
@@ -69,7 +73,7 @@
     line-height: 22px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    row-gap: 110px;
+    row-gap: 57px;
   }
 
   .about__item--flower,
@@ -99,17 +103,17 @@
 
 @media (min-width: $desktop-width) {
   .about {
-    padding-top: 91px;
-    padding-bottom: 90px;
+    padding-top: 68px;
+    padding-bottom: 58px;
   }
 
   .about__container {
     padding-left: 226px;
   }
 
-  //.about__title {
-  //  padding-left: 176px;
-  //}
+  .about__title {
+    margin-bottom: 39px;
+  }
 
   .about__list {
     width: 83%;

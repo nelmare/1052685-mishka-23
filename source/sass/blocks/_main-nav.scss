@@ -95,7 +95,7 @@
   //  display: none;
   //}
 
-  .main-nav {
+  .main-nav__wrapper {
     display: grid;
     grid-template-columns: 49% 51%;
     width: auto;
@@ -111,9 +111,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav {
+  .main-nav__wrapper {
     grid-template-columns: 2fr 1fr;
-    max-width: 1150px;
+    max-width: 1050px;
     margin: 0 auto;
   }
 }

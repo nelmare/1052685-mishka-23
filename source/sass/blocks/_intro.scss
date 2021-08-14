@@ -4,7 +4,6 @@
   background-size: 320px 373px;
   background-position: center top;
   width: 100%;
-
   background-color: $grey-color8;
 }
 
@@ -57,7 +56,7 @@
 .intro__link--dark {
   background-color: $green-color2;
   background-image: url("../img/toy-icon.svg");
-  background-size: 40px 62px;
+  background-size: 60px 60px;
   background-position: 90% 21px;
 
   &:hover {
@@ -71,16 +70,37 @@
 }
 
 @media (min-width: $tablet-width) {
+  .intro {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 24px;
+      background-color: transparent;
+      background-image: url("../img/zigzag-mask.svg");
+      background-repeat: repeat-x;
+      background-size: auto 24px;
+      background-position: 0 0;
+      bottom: -1px;
+      left: 0;
+      z-index: 2;
+    }
+  }
+
   .intro__container {
     padding: 0 50px;
     grid-template-rows: 1fr auto;
-    min-height: 480px;
+    min-height: auto;
   }
 
   .intro__title {
     font-size: 43px;
     line-height: 50px;
     max-width: 660px;
+    padding-top: 89px;
+    margin-bottom: 372px;
   }
 
   .intro__list {
@@ -92,11 +112,39 @@
   .intro__link {
     font-size: 20px;
     line-height: 30px;
-    padding: 25px 34px 36px;
+    padding: 25px 36px 46px;
+  }
+
+  .intro__link--light {
+    background-size: 41px 62px;
+  }
+
+  .intro__link--dark {
+    background-size: 61px 61px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .intro {
+    &::before {
+      height: 34px;
+      background-size: auto 34px;
+    }
+  }
+
+  .intro__container {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  .intro__title {
+    font-size: 53px;
+    line-height: 57px;
+    max-width: 675px;
+    margin-bottom: 355px;
+    padding-top: 94px;
+  }
+
   .intro__list {
     max-width: 1150px;
     margin-left: auto;

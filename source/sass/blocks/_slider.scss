@@ -2,10 +2,23 @@
   @include list-reset;
 }
 
+.slider__item {
+  display: none;
+}
+
+.slider__item--current {
+  display: block;
+}
+
 .slider__text,
 .slider__author {
   @include margin-reset;
   margin-bottom: 30px;
+}
+
+.slider__author {
+  display: flex;
+  flex-direction: column;
 }
 
 .slider__text {
@@ -57,8 +70,16 @@
     position: relative;
   }
 
+  .slider__text {
+    margin-bottom: 61px;
+  }
+
   .slider__name {
     font-size: 18px;
+  }
+
+  .slider__author {
+    margin-bottom: 0;
   }
 
   .slider__controls {
@@ -67,5 +88,10 @@
     right: 0;
     z-index: 1;
     width: 175px;
+    margin-bottom: 0;
+  }
+
+  .slider__button {
+    border: none;
   }
 }

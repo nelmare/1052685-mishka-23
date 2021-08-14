@@ -1,6 +1,5 @@
 .copyright {
   padding-top: 22px;
-
 }
 
 .copyright__text {
@@ -14,4 +13,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-top: 0;
+  }
 }
