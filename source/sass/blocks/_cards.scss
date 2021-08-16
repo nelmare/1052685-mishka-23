@@ -10,13 +10,31 @@
   margin-bottom: 30px;
 }
 
+.cards__image-link:hover ~ .cards__wrapper {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cards__image-link:active ~ .cards__wrapper {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
 .cards__image {
   display: block;
+  width: 100%;
+  object-fit: contain;
 }
 
 .cards__wrapper {
   padding: 27px 28px 0 28px;
   border: 1px solid $grey-color4;
+
+  &:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .cards__link {
@@ -49,7 +67,11 @@
 }
 
 .cards__footer {
-  padding: 22px 0 26px 0;
+  padding: 14px 0 18px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid $grey-color4;
 }
 
 .cards__cost {
@@ -57,6 +79,28 @@
   font-weight: bold;
   line-height: 24px;
   color: $title-color;
+}
+
+.cards__button {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+
+.cards__button svg {
+  width: 20px;
+  height: 19px;
+}
+
+.cards__button:hover svg path {
+  fill: $green-color5;
+  opacity: 1;
+}
+
+.cards__button:active svg path {
+  fill: $green-color5;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -76,6 +120,11 @@
 
   .cards__image-link {
     width: 50%;
+  }
+
+  .cards__image {
+    width: 334px;
+    height: 334px;
   }
 
   .cards__wrapper {
@@ -106,13 +155,14 @@
   .cards__list {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .cards__item {
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 57px;
     margin-right: 52px;
-    width: 33%;
+    width: 30%;
   }
 
   .cards__item:last-child {
@@ -127,12 +177,27 @@
     width: 100%;
   }
 
+  .cards__image {
+    width: 316px;
+    height: 462px;
+  }
+
   .cards__wrapper {
     width: 100%;
     padding: 27px 26px 0 28px;
+    min-height: 197px;
+    position: relative;
   }
 
   .cards__info {
-    margin-bottom: 37px;
+    margin-bottom: 12px;
+  }
+
+  .cards__footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 56px);
   }
 }
