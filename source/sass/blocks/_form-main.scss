@@ -7,10 +7,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-main {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .form-main__legend {
-    padding-top: 54px;
-    margin-bottom: 63px;
-    max-width: 675px;
+    padding: 54px 50px 0 50px;
+    margin-bottom: 13px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -19,11 +23,11 @@
 @media (min-width: $desktop-width) {
   .form-main {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr 1fr;
   }
 
   .form-main__legend {
-    padding-top: 98px;
+    padding: 98px 33px 16px 33px;
     grid-column: 2/3;
   }
 }
