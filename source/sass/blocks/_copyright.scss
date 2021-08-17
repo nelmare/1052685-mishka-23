@@ -15,6 +15,14 @@
   align-items: center;
 }
 
+.copyright__logo:hover svg path {
+  fill: $green-color4;
+}
+
+.copyright__logo:active svg path {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     padding-top: 0;
