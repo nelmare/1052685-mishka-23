@@ -15,6 +15,14 @@
   align-items: center;
 }
 
+.copyright__logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 27px;
+  height: 34px;
+  margin-left: 27px;
+}
+
 .copyright__logo:hover svg path {
   fill: $green-color4;
 }
