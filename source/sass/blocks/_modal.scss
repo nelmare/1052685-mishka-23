@@ -54,7 +54,7 @@
   }
 }
 
-.modal__button label {
+.modal__button .modal__label {
   background-color: $main-color;
   padding: 16px 22px;
   display: inline-block;
@@ -67,20 +67,20 @@
   text-transform: uppercase;
 }
 
-.modal__button input {
+.modal__button .modal__input {
   display: none;
 }
 
-.modal__button input ~ label {
+.modal__button .modal__input ~ .modal__label {
   border: 2px solid $grey-color12;
   background-color: $main-color;
 }
 
-.modal__button input:hover ~ label {
+.modal__button .modal__input:hover ~ .modal__label {
   border: 2px solid $grey-color13;
 }
 
-.modal__button input:checked ~ label {
+.modal__button .modal__input:checked ~ .modal__label {
   border: 2px solid $green-color1;
 }
 
