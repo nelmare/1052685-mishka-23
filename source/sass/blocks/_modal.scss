@@ -16,16 +16,21 @@
 .modal__instruction {
   @include margin-reset;
   text-align: center;
+  margin-bottom: 21px;
 }
 
 .modal__wrapper {
-  margin-bottom: 21px;
+  margin-bottom: 31px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .modal__button {
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
+  width: 32%;
 }
 
 .modal__basket-button {
@@ -37,6 +42,8 @@
   border: none;
   width: 100%;
   text-align: center;
+  padding: 18px;
+  text-transform: uppercase;
 
   &:hover {
     background-color: $green-color3;
@@ -45,6 +52,36 @@
   &:focus {
     opacity: 0.3;
   }
+}
+
+.modal__button .modal__label {
+  background-color: $main-color;
+  padding: 16px 22px;
+  display: inline-block;
+  cursor: pointer;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+  transition-property: box-shadow;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal__button .modal__input {
+  display: none;
+}
+
+.modal__button .modal__input ~ .modal__label {
+  border: 2px solid $grey-color12;
+  background-color: $main-color;
+}
+
+.modal__button .modal__input:hover ~ .modal__label {
+  border: 2px solid $grey-color13;
+}
+
+.modal__button .modal__input:checked ~ .modal__label {
+  border: 2px solid $green-color1;
 }
 
 @media (min-width: $tablet-width) {
@@ -57,7 +94,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .modal__title {
     line-height: 57px;
   }
