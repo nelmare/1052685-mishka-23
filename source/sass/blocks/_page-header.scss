@@ -5,6 +5,14 @@
   color: $title-color;
 }
 
+.page-header--inner .site-list__logo:hover {
+  opacity: 0.6;
+}
+
+.page-header--inner .site-list__logo:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     padding: 0 50px;

@@ -18,13 +18,12 @@
   align-items: center;
   justify-content: center;
 
-  //&:hover .social__icon {
-  //  fill: $button-color;
-  //}
+  &:hover svg path {
+    fill: $green-color4;
+  }
 
-  &:active .social__icon,
-  &:focus .social__icon {
-    fill: rgba(104, 183, 56, 0.3);
+  &:active svg path {
+    opacity: 0.3;
   }
 }
 

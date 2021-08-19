@@ -66,10 +66,16 @@
 
 .contacts__description--email {
   border-bottom: 1px solid $green-color1;
-}
 
-.contacts__description:hover {
-  color: $green-color4;
+  &:hover {
+    color: $green-color4;
+    border-bottom: 1px solid $green-color4;
+  }
+
+  &:active {
+    color: $green-color4;
+    border-bottom: 1px solid $green-color6;
+  }
 }
 
 .contacts__description--address:hover {
