@@ -197,10 +197,12 @@
       <h2 class="contacts__title block-title">Контакты</h2>
       <address class="contacts__wrapper">
         <p class="contacts__block contacts__block--email">
-          <span class="contacts__termin">e-mail:</span><span class="contacts__description contacts__description--email">info@mimimishkashop.ru</span>
+          <span class="contacts__termin">e-mail:</span>
+          <a href="info@mimimishkashop.ru" class="contacts__description contacts__description--email">info@mimimishkashop.ru</a>
         </p>
         <p class="contacts__block contacts__block--address">
-          <span class="contacts__termin">адрес:</span><span class="contacts__description">г. Санкт-Петербург<br> ул.&nbsp;Большая Конюшенная д.&nbsp;19/8, офис 101</span>
+          <span class="contacts__termin">адрес:</span>
+          <a href="#" class="contacts__description contacts__description--address">г. Санкт-Петербург<br> ул.&nbsp;Большая Конюшенная д.&nbsp;19/8, офис 101</a>
         </p>
       </address>
     </div>
@@ -351,16 +353,16 @@
     <p class="modal__instruction">Выберите размер:</p>
     <div class="modal__wrapper">
       <div class="modal__button modal__button--active">
-        <input type="radio" name="answer" id="s-size" checked>
-        <label for="s-size">S</label>
+        <input class="modal__input" type="radio" name="answer" id="s-size" checked>
+        <label class="modal__label" for="s-size">S</label>
       </div>
       <div class="modal__button">
-        <input type="radio" name="answer" id="m-size">
-        <label for="m-size">M</label>
+        <input class="modal__input" type="radio" name="answer" id="m-size">
+        <label class="modal__label" for="m-size">M</label>
       </div>
       <div class="modal__button">
-        <input type="radio" name="answer" id="l-size">
-        <label for="l-size">L</label>
+        <input class="modal__input" type="radio" name="answer" id="l-size">
+        <label class="modal__label" for="l-size">L</label>
       </div>
     </div>
     <button class="modal__basket-button" type="submit">Добавить</button>

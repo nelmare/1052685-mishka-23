@@ -59,6 +59,11 @@
   width: calc(100% - 60px);
 }
 
+.contacts__description {
+  color: $text-color;
+  text-decoration: none;
+}
+
 .contacts__description--email {
   border-bottom: 1px solid $green-color1;
 
@@ -71,6 +76,15 @@
     color: $green-color4;
     border-bottom: 1px solid $green-color6;
   }
+}
+
+.contacts__description--address:hover {
+  color: $text-color;
+  opacity: 0.6;
+}
+
+.contacts__description--address:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
