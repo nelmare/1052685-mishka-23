@@ -31,10 +31,15 @@
   .reviews {
     padding-top: 82px;
     padding-bottom: 132px;
-    background-image: url("../img/review-back.png");
+    background-image: url("../img/review-back@1x.png");
     background-position: left top;
     background-size: 350px 457px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review-back@2x.png");
+      background-size: 350px auto;
+    }
 
     &::after {
       height: 17px;
@@ -86,10 +91,15 @@
     padding-bottom: 186px;
     padding-left: 176px;
     padding-right: 0;
-    background-image: url("../img/review-back.png");
+    background-image: url("../img/review-back@1x.png");
     background-position: left top;
     background-size: 350px 457px;
     background-repeat: no-repeat;
     max-width: 1050px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review-back@2x.png");
+      background-size: 350px auto;
+    }
   }
 }

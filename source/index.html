@@ -18,11 +18,11 @@
       <ul class="menu__list site-list">
         <li class="site-list__item site-list__item--logo">
           <a class="site-list__logo">
-            <!--            <picture>&ndash;&gt;-->
-            <!--          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">-->
-            <!--          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">-->
-            <img class="site-list__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
-            <!--        </picture>-->
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="site-list__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+            </picture>
           </a>
         </li>
         <li class="site-list__item site-list__item--nav">
@@ -121,13 +121,14 @@
         </tr>
         </tbody>
       </table>
-<!--      <div class="promo__image-wrapper">-->
-        <!--      <picture>-->
-        <!--          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">-->
-        <!--          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">-->
-        <img class="promo__image" src="img/three-set-mobile.png" width="260" height="315" alt="Корзинка из магазина Мишка">
-        <!--        </picture>-->
-<!--      </div>-->
+      <div class="promo__image-wrapper">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/three-set-desktop@1x.png 1x, img/three-set-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/three-set-tablet@1x.png 1x, img/three-set-tablet@2x.png 2x">
+        <img class="promo__image" src="img/three-set-mobile@1x.png" srcset="img/three-set-mobile@2x.png 2x"
+              alt="Корзинка из магазина Мишка">
+      </picture>
+      </div>
       <p class="promo__price">Цена: <span>990 руб.</span></p>
       <button class="promo__button button" type="button">Заказать</button>
     </div>
@@ -208,14 +209,14 @@
       <!--                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8226084186708!2d30.315214851720512!3d59.96826598179812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1624352805713!5m2!1sru!2sru"-->
       <!--                width="1200" height="430" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">-->
       <!--        </iframe>-->
-      <!--        <picture>-->
-      <!--          <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">-->
-      <!--          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">-->
-      <!--          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">-->
-      <!--          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">-->
-      <!--          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">-->
-      <img class="contacts__map" src="img/map-mobile@1x.png" alt="Офис компании расположен по адресу: Санкт-Петербург, ул.Большая Конюшенная, д.19/8">
-      <!--        </picture>-->
+      <picture>
+<!--                <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">-->
+<!--                <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">-->
+<!--                <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">-->
+        <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
+        <img class="contacts__map" src="img/map-mobile@1x.png" srcset="img/map-mobile@2x.png 2x" alt="Офис компании расположен по адресу: Санкт-Петербург, ул.Большая Конюшенная, д.19/8">
+      </picture>
     </div>
     <a class="contacts__button button" href="#">Напишите нам</a>
   </section>
