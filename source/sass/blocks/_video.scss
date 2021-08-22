@@ -77,6 +77,10 @@
   transform: translateX(-50%);
 }
 
+.video__link {
+  display: block;
+}
+
 .video__media {
   width: 100%;
   object-fit: contain;
@@ -157,7 +161,6 @@
   .video {
     display: grid;
     grid-template-columns: 683px auto;
-    grid-template-rows: repeat(3, auto);
   }
 
   .video__container {

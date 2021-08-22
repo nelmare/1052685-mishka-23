@@ -1,10 +1,15 @@
 .intro {
-  background-image: url("../img/intro-back.png");
+  background-image: url("../img/intro-back-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: 320px 373px;
   background-position: center top;
   width: 100%;
   background-color: $grey-color8;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-back-mobile@2x.png");
+    background-size: 320px auto;
+  }
 }
 
 .intro__container {
@@ -72,6 +77,14 @@
 @media (min-width: $tablet-width) {
   .intro {
     position: relative;
+    background-image: url("../img/intro-back-tablet-desktop@1x.png");
+    background-size: 768px 746px;
+    background-position: center -70px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-back-tablet-desktop@2x.png");
+      background-size: 768px auto;
+    }
 
     &::before {
       content: "";

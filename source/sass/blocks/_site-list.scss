@@ -21,6 +21,11 @@
   //}
 }
 
+.site-list__logo-image {
+  width: 86px;
+  height: 35px;
+}
+
 .site-list__links {
   @include list-reset;
 }
@@ -66,6 +71,11 @@
     text-align: left;
   }
 
+  .site-list__logo-image {
+    width: 113px;
+    height: 46px;
+  }
+
   .site-list__links-item {
     border-bottom: none;
   }
@@ -86,6 +96,15 @@
   .site-list__item--logo {
     order: 2;
     margin-right: 101px;
+  }
+
+  .site-list__logo {
+    padding-top: 9px;
+  }
+
+  .site-list__logo-image {
+    width: 149px;
+    height: 72px;
   }
 
   .site-list__links {

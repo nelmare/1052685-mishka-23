@@ -18,11 +18,11 @@
       <ul class="menu__list site-list">
         <li class="site-list__item site-list__item--logo">
           <a class="site-list__logo" href="index.html">
-            <!--            <picture>&ndash;&gt;-->
-            <!--          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">-->
-            <!--          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">-->
-            <img class="site-list__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
-            <!--        </picture>-->
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="site-list__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+            </picture>
           </a>
         </li>
         <li class="site-list__item">
@@ -88,8 +88,13 @@
     <ul class="cards__list">
       <li class="cards__item">
         <a class="cards__image-link" href="#">
-          <img class="cards__image" src="img/product1-mobile.png" width="260" height="195" alt="Вязаный зайчик в голубом
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/product1-desktop@1x.png 1x, img/product1-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/product1-tablet@1x.png 1x, img/product1-tablet@2x.png 2x">
+            <img class="cards__image" src="img/product1-mobile@1x.png" srcset="img/product1-mobile@2x.png 2x"
+                  alt="Вязаный зайчик в голубом
         костюмчике">
+          </picture>
         </a>
         <div class="cards__wrapper">
           <a class="cards__link" href="#">
@@ -117,8 +122,12 @@
       </li>
       <li class="cards__item">
         <a class="cards__image-link" href="#">
-          <img class="cards__image" src="img/product2-mobile.png" width="260" height="195" alt="Вязаная круглая корзинка белого
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/product2-desktop@1x.png 1x, img/product2-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/product2-tablet@1x.png 1x, img/product2-tablet@2x.png 2x">
+            <img class="cards__image" src="img/product2-mobile@1x.png" srcset="img/product2-mobile@2x.png 2x" alt="Вязаная круглая корзинка белого
         и персикового цветов">
+          </picture>
         </a>
         <div class="cards__wrapper">
           <a class="cards__link" href="#">
@@ -146,8 +155,13 @@
       </li>
       <li class="cards__item">
         <a class="cards__image-link" href="#">
-          <img class="cards__image" src="img/product3-mobile.png" width="260" height="195" alt="Вязаная круглая корзинка белого и
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/product3-desktop@1x.png 1x, img/product3-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/product3-tablet@1x.png 1x, img/product3-tablet@2x.png 2x">
+            <img class="cards__image" src="img/product3-mobile@1x.png" srcset="img/product3-mobile@2x.png 2x"
+                  alt="Вязаная круглая корзинка белого и
         светло-зеленого цветов">
+          </picture>
         </a>
         <div class="cards__wrapper">
           <a class="cards__link" href="#">
@@ -179,7 +193,10 @@
     <div class="video__block">
       <a class="video__link" href="#">
         <picture>
-          <img class="video__media" src="../img/video-mobile.png" alt="Видео о том, как появляются наши товары">
+          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.png 1x, img/video-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.png 1x, img/video-tablet@2x.png 2x">
+          <img class="video__media" src="img/video-mobile@1x.png" srcset="img/video-mobile@2x.png 2x"
+                alt="Видео о том, как появляются наши товары">
         </picture>
       </a>
       <button class="video__button" aria-label="Запустить видео"></button>
