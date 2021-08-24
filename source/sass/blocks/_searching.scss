@@ -9,7 +9,7 @@
   padding: 28px 30px 26px 30px;
 }
 
-.searching__button svg {
+.searching__button .searching__button-icon {
   margin-right: 25px;
 }
 
@@ -24,7 +24,7 @@
     display: none;
   }
 
-  .searching__button svg {
+  .searching__button .searching__button-icon {
     margin-right: 0;
   }
 }

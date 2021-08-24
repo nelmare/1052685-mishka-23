@@ -47,6 +47,11 @@
   }
 }
 
+.cards__button-icon {
+  fill: $title-color;
+  opacity: 0.2;
+}
+
 .cards__link {
   text-decoration: none;
   display: inline-block;
@@ -98,17 +103,17 @@
   height: 40px;
 }
 
-.cards__button svg {
+.cards__button-icon {
   width: 20px;
   height: 19px;
 }
 
-.cards__button:hover svg path {
+.cards__button:hover .cards__button-icon {
   fill: $green-color5;
   opacity: 1;
 }
 
-.cards__button:active svg path {
+.cards__button:active .cards__button-icon {
   fill: $green-color5;
   opacity: 0.3;
 }
