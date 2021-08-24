@@ -50,6 +50,8 @@
 .cards__button-icon {
   fill: $title-color;
   opacity: 0.2;
+  width: 20px;
+  height: 19px;
 }
 
 .cards__link {
@@ -101,11 +103,6 @@
   border: none;
   width: 40px;
   height: 40px;
-}
-
-.cards__button-icon {
-  width: 20px;
-  height: 19px;
 }
 
 .cards__button:hover .cards__button-icon {
