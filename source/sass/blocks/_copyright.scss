@@ -23,11 +23,15 @@
   margin-left: 27px;
 }
 
-.copyright__logo:hover svg path {
+.copyright__logo-icon {
+  fill: $green-color1;
+}
+
+.copyright__logo:hover .copyright__logo-icon {
   fill: $green-color4;
 }
 
-.copyright__logo:active svg path {
+.copyright__logo:active .copyright__logo-icon {
   opacity: 0.3;
 }
 

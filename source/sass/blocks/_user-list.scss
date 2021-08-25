@@ -6,6 +6,11 @@
   border-bottom: 1px solid $grey-color4;
 }
 
+.user-list__link-icon {
+  fill: $title-color;
+  opacity: 0.2;
+}
+
 .user-list__link {
   color: $title-color;
   text-decoration: none;
@@ -20,12 +25,12 @@
     opacity: 0.3;
   }
 
-  &:hover svg path {
+  &:hover .user-list__link-icon {
     fill: $green-color5;
     opacity: 1;
   }
 
-  &:active svg path {
+  &:active .user-list__link-icon {
     fill: $green-color5;
     opacity: 0.3;
   }

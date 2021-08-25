@@ -11,6 +11,10 @@
   border-bottom: 1px solid $grey-color14;
 }
 
+.social__link-icon {
+  fill: $grey-color16;
+}
+
 .social__link {
   cursor: pointer;
   padding: 10px 20px;
@@ -18,11 +22,11 @@
   align-items: center;
   justify-content: center;
 
-  &:hover svg path {
+  &:hover .social__link-icon {
     fill: $green-color4;
   }
 
-  &:active svg path {
+  &:active .social__link-icon {
     opacity: 0.3;
   }
 }

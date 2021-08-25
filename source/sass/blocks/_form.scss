@@ -289,17 +289,17 @@
   width: 100%;
   position: relative;
 
-  & svg {
+  & .form__line-icon {
     position: absolute;
     bottom: 20px;
   }
 }
 
-.form__block--tel svg {
+.form__block--tel .form__line-icon {
   right: 7px;
 }
 
-.form__block--email svg {
+.form__block--email .form__line-icon {
   right: 3px;
 }
 
@@ -311,14 +311,19 @@
   padding-right: 60px;
 }
 
-.form__line:hover ~ svg path,
-.form__line:focus ~ svg path {
+.form__line-icon {
+  fill: $title-color;
+  opacity: 0.2;
+}
+
+.form__line:hover ~ .form__line-icon,
+.form__line:focus ~ .form__line-icon {
   fill: $green-color5;
   opacity: 1;
 }
 
-.form__line--tel:hover ~ svg g,
-.form__line--tel:focus ~ svg g {
+.form__line--tel:hover ~ .form__line-icon,
+.form__line--tel:focus ~ .form__line-icon {
   opacity: 1;
 }
 
@@ -430,11 +435,11 @@
     margin-bottom: 0;
   }
 
-  .form__block--tel svg {
+  .form__block--tel .form__line-icon {
     right: 26px;
   }
 
-  .form__block--email svg {
+  .form__block--email .form__line-icon {
     right: 22px;
   }
 
