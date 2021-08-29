@@ -12,18 +12,11 @@
   }
 }
 
-.intro__container {
-  //display: grid;
-  //grid-template-rows: 1fr 206px;
-  //min-height: 507px;
-}
-
 .intro__title {
   @include margin-reset;
   font-weight: bold;
   font-size: 27px;
   text-align: center;
-  //margin: 0 auto 138px auto;
   margin: 0 auto 120px auto;
   width: 100%;
   max-width: 334px;

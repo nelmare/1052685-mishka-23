@@ -267,13 +267,6 @@
   line-height: 18px;
 }
 
-//.form__textarea:focus,
-//.form input[type="text"]:focus,
-//.form input[type="tel"]:focus,
-//.form input[type="email"]:focus {
-//  color: $text-color;
-//}
-
 .form__block--data,
 .form__block--tel,
 .form__block--email {
@@ -441,7 +434,6 @@
   }
 
   .form__checkbox:checked + .form__check {
-    //background-image: url("../img/tick-icon.svg");
     background-size: 32px 22px;
   }
 

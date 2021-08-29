@@ -71,9 +71,6 @@
   height: 315px;
   width: 260px;
   display: block;
-  //height: auto;
-  //object-fit: contain;
-  //width: 100%;
   background-color: $grey-color2;
 }
 
@@ -209,12 +206,6 @@
   .promo__image-wrapper {
     grid-row: 1/-1;
     margin-top: 0;
-  }
-
-  .promo__image {
-
-    //width: 525px;
-    //height: 636px;
   }
 
   .promo__text,

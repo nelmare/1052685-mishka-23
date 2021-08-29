@@ -41,10 +41,6 @@
   }
 }
 
-//.video__info-wrapper .video__title {
-//  display: none;
-//}
-
 .video__text {
   @include margin-reset;
   font-size: 13px;
@@ -67,8 +63,6 @@
 .video__block {
   width: calc(100% - 60px);
   min-height: 150px;
-  //position: relative;
-  //margin-bottom: 35px;
   position: absolute;
   top: 98px;
   left: 50%;
