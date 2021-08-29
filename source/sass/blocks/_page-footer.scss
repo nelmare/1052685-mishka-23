@@ -10,7 +10,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding-top: 41px;
+    padding-top: 43px;
     padding-bottom: 48px;
   }
 
@@ -24,14 +24,14 @@
     display: block;
     width: 102px;
     height: 34px;
+  }
 
-    &:hover .page-footer__logo-image {
-      fill: $green-color4;
-    }
+  .page-footer__logo--inner:hover .page-footer__logo-image {
+    fill: $green-color4;
+  }
 
-    &:active .page-footer__logo-image {
-      opacity: 0.3;
-    }
+  .page-footer__logo--inner:active .page-footer__logo-image {
+    opacity: 0.3;
   }
 
   .page-footer__logo-image {

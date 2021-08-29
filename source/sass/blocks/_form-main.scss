@@ -1,9 +1,15 @@
+.form-main {
+  min-width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .form-main__legend {
   @include margin-reset;
-  padding-top: 17px;
+  padding: 17px 30px 0 30px;
   font-size: 13px;
   line-height: 24px;
-  margin-bottom: 29px;
+  margin-bottom: 31px;
 }
 
 @media (min-width: $tablet-width) {
@@ -13,7 +19,7 @@
   }
 
   .form-main__legend {
-    padding: 54px 50px 0 50px;
+    padding: 56px 50px 0 50px;
     margin-bottom: 13px;
     font-size: 17px;
     line-height: 30px;
@@ -29,5 +35,8 @@
   .form-main__legend {
     padding: 98px 33px 16px 33px;
     grid-column: 2/3;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

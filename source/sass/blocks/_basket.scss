@@ -1,19 +1,19 @@
-.basket svg {
+.basket .basket__link-icon {
   margin-right: 23px;
 }
 
 @media (min-width: $tablet-width) {
   .basket {
-    //padding-right: 80px;
+    flex-grow: 1;
   }
 
-  .basket svg {
-    margin: 0 29px;
+  .basket .basket__link-icon {
+    margin: 0 31px 0 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .basket svg {
+  .basket .basket__link-icon {
     margin: 0 31px;
   }
 }
