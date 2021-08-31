@@ -1,5 +1,5 @@
 .about {
-  padding-top: 37px;
+  padding-top: 32px;
   padding-bottom: 26px;
 }
 
@@ -16,8 +16,8 @@
 }
 
 .about__item {
-  margin-bottom: 32px;
-  padding-top: 51px;
+  margin-bottom: 29px;
+  padding-top: 54px;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -29,6 +29,7 @@
 .about__item--flower {
   background-image: url("../img/flower-icon.svg");
   background-size: 33px 38px;
+  background-position: 7px 0;
 }
 
 .about__item--money {
@@ -39,6 +40,7 @@
 .about__item--heart {
   background-image: url("../img/heart-icon.svg");
   background-size: 34px 27px;
+  background-position: 7px 6px;
 }
 
 .about__item--threads {
@@ -49,6 +51,7 @@
 .about__item--rocket {
   background-image: url("../img/rocket-icon.svg");
   background-size: 55px 23px;
+  background-position: 0 4px;
 }
 
 .about__item--gift {
@@ -58,8 +61,8 @@
 
 @media (min-width: $tablet-width) {
   .about {
-    padding-top: 72px;
-    padding-bottom: 83px;
+    padding-top: 57px;
+    padding-bottom: 55px;
   }
 
   .about__title {
@@ -67,13 +70,11 @@
   }
 
   .about__list {
-    //column-count: 2;
-    //column-width: auto;
     font-size: 20px;
     line-height: 22px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    row-gap: 57px;
+    row-gap: 27px;
   }
 
   .about__item--flower,
@@ -90,21 +91,35 @@
     max-width: 320px;
   }
 
-  .about__item--flower,
-  .about__item--threads {
-    grid-row: 1/2;
+  .about__item--flower {
+    order: 1;
   }
 
-  .about__item--money,
+  .about__item--threads {
+    order: 2;
+  }
+
+  .about__item--money {
+    order: 3;
+  }
+
   .about__item--rocket {
-    grid-row: 2/3;
+    order: 4;
+  }
+
+  .about__item--heart {
+    order: 5;
+  }
+
+  .about__item--gift {
+    order: 6;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about {
     padding-top: 68px;
-    padding-bottom: 58px;
+    padding-bottom: 61px;
   }
 
   .about__container {
@@ -112,11 +127,10 @@
   }
 
   .about__title {
-    margin-bottom: 39px;
+    margin-bottom: 43px;
   }
 
   .about__list {
-    width: 83%;
-    //padding-left: 176px;
+    width: 80%;
   }
 }

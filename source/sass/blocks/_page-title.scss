@@ -5,8 +5,7 @@
   color: $title-color;
   background-color: $grey-color2;
   text-align: center;
-  padding-top: 73px;
-  padding-bottom: 73px;
+  padding: 73px 30px;
   position: relative;
 }
 
@@ -14,8 +13,7 @@
   .page-title {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 56px;
-    padding-bottom: 87px;
+    padding: 36px 50px 85px 50px;
 
     &::after {
       content: "";
@@ -38,8 +36,7 @@
   .page-title {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 57px;
-    padding-bottom: 113px;
+    padding: 38px 50px 113px 50px;
 
     &::after {
       height: 34px;

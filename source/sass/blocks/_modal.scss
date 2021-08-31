@@ -1,22 +1,43 @@
 .modal {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $white-color;
+  z-index: 11;
+  display: none;
+}
+
+.modal__content {
+  position: fixed;
   padding: 28px 30px 46px 30px;
   width: 100%;
   max-width: 566px;
   margin: 0 auto;
   border: 1px solid $grey-color9;
-  box-shadow: 0 5px 10 $grey-color10;
+  box-shadow: 0 5px 10px $grey-color10;
+  top: 50%;
+  left: 50%;
+  bottom: auto;
+  background-color: $main-color;
+  z-index: 12;
+  transform: translate(-50%, -50%);
 }
 
 .modal__title {
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 
 .modal__instruction {
   @include margin-reset;
   text-align: center;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 
 .modal__wrapper {
@@ -30,7 +51,7 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
-  width: 32%;
+  width: 31%;
 }
 
 .modal__basket-button {
@@ -84,8 +105,16 @@
   border: 2px solid $green-color1;
 }
 
+.modal-close {
+  display: none;
+}
+
+.modal-show {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
-  .modal {
+  .modal__content {
     padding: 37px 92px 46px 92px;
   }
 

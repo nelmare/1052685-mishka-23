@@ -19,6 +19,7 @@
 .slider__author {
   display: flex;
   flex-direction: column;
+  margin-bottom: 28px;
 }
 
 .slider__text {
@@ -30,6 +31,7 @@
   font-size: 17px;
   line-height: 24px;
   color: $title-color;
+  margin-bottom: 5px;
 }
 
 .slider__nick {
@@ -44,11 +46,11 @@
 .slider__button {
   background-color: transparent;
   border: 1px solid $grey-color4;
-  padding: 26px 48px 26px 32px;
+  padding: 25px 48px 25px 32px;
   background-image: url("../img/huge-arrow-left.svg");
   background-repeat: no-repeat;
   background-size: 50px 26px;
-  background-position: 48% 50%;
+  background-position: 50% 50%;
   width: 50%;
 
   &:hover {
@@ -80,6 +82,7 @@
 
   .slider__author {
     margin-bottom: 0;
+    max-width: 70%;
   }
 
   .slider__controls {
@@ -93,5 +96,16 @@
 
   .slider__button {
     border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__text {
+    margin-bottom: 42px;
+  }
+
+  .slider__name {
+    font-size: 17px;
+    margin-bottom: 3px;
   }
 }

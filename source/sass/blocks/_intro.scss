@@ -2,7 +2,7 @@
   background-image: url("../img/intro-back-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: 320px 373px;
-  background-position: center top;
+  background-position: center -17px;
   width: 100%;
   background-color: $grey-color8;
 
@@ -12,20 +12,14 @@
   }
 }
 
-.intro__container {
-  display: grid;
-  grid-template-rows: 1fr 206px;
-  min-height: 507px;
-}
-
 .intro__title {
   @include margin-reset;
   font-weight: bold;
   font-size: 27px;
   text-align: center;
-  margin: 0 auto 138px auto;
+  margin: 0 auto 120px auto;
   width: 100%;
-  max-width: 375px;
+  max-width: 334px;
   padding: 73px 30px 0 30px;
 }
 
@@ -43,6 +37,7 @@
   display: block;
   font-size: 19px;
   line-height: 24px;
+  font-weight: bold;
   padding: 24px 0 31px 30px;
   background-repeat: no-repeat;
 }
@@ -51,7 +46,7 @@
   background-color: $green-color1;
   background-image: url("../img/interior-icon.svg");
   background-size: 40px 62px;
-  background-position: 90% 23px;
+  background-position: 87% 23px;
 
   &:hover {
     background-color: $green-color3;
@@ -79,7 +74,7 @@
     position: relative;
     background-image: url("../img/intro-back-tablet-desktop@1x.png");
     background-size: 768px 746px;
-    background-position: center -70px;
+    background-position: center -66px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro-back-tablet-desktop@2x.png");
@@ -112,8 +107,8 @@
     font-size: 43px;
     line-height: 50px;
     max-width: 660px;
-    padding-top: 89px;
-    margin-bottom: 372px;
+    padding-top: 90px;
+    margin-bottom: 371px;
   }
 
   .intro__list {
@@ -125,15 +120,18 @@
   .intro__link {
     font-size: 20px;
     line-height: 30px;
-    padding: 25px 36px 46px;
+    padding: 26px 36px 44px;
+    height: 100%;
   }
 
   .intro__link--light {
     background-size: 41px 62px;
+    background-position: 88% 30px;
   }
 
   .intro__link--dark {
     background-size: 61px 61px;
+    background-position: 88% 31px;
   }
 }
 
@@ -166,5 +164,6 @@
 
   .intro__link {
     padding-left: 37px;
+    padding-bottom: 48px;
   }
 }
