@@ -36,7 +36,7 @@
     position: absolute;
     width: 67px;
     height: 100px;
-    background-image: url("/img/map-pin.svg");
+    background-image: url("../img/map-pin.svg");
     background-position: center center;
     background-repeat: no-repeat;
     z-index: 2;
@@ -223,6 +223,7 @@
     margin-bottom: 0;
 
     &::before {
+      top: 33%;
       left: 54%;
       transform: translateX(-50%);
     }
